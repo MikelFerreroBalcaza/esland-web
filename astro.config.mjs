@@ -1,9 +1,9 @@
 import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
-import vercel from "@astrojs/vercel/serverless";
-import preact from "@astrojs/preact";
+import tailwind from '@astrojs/tailwind';
+import vercel from '@astrojs/vercel/serverless';
+import preact from '@astrojs/preact';
+import auth from 'auth-astro';
 
-import auth from "auth-astro";
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,6 +15,6 @@ export default defineConfig({
       prefixDefaultLocale: false
     }
   },
-  output: "server",
+  output: 'server',
   adapter: vercel()
 });
